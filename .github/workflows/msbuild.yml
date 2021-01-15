@@ -36,5 +36,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: Upload
-        working-directory: ${{env.GITHUB_WORKSPACE}}
-        path:  ${{env.BUILD_OUTPUT_FILE_PATH}}
+        path: /CISetupTestUWP/bin/X64/Release/
