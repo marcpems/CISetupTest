@@ -37,7 +37,7 @@ jobs:
       run: mkdir __artifacts
 
     - name: Copy artifacts
-      run: xcopy  ${{env.BUILD_PROJECT}}/bin/${{env.BUILD_PLATFORM}}/${{env.BUILD_CONFIGURATION}} __artifacts /ISCY
+      run: xcopy  ${{env.BUILD_PROJECT}}\bin\${{env.BUILD_PLATFORM}}\${{env.BUILD_CONFIGURATION}} __artifacts /ISCY
 
     - uses: actions/upload-artifact@v2
       with:
